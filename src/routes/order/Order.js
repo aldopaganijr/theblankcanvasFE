@@ -3,6 +3,11 @@ import { motion } from "framer-motion"
 import {pageAnimation} from "../../Animation"
 import axios from 'axios'
 import { useEffect, useState } from 'react'
+import {FaTrashAlt} from "react-icons/fa"
+import PaymentForm from "../../components/payment-form/PaymentForm"
+
+
+
 
 const Order = () => {
 
@@ -28,12 +33,6 @@ const Order = () => {
             })
             }, [cartItems])
 
-const checkoutClick = function(event) {
-    axios.delete('https://e-commerce-earth.herokuapp.com/cart')
-    setCartTotal(0)
-
-}
-
 const removeClick = function(event) {
     let itemId = event.target.getAttribute('id')
     axios.delete(`https://e-commerce-earth.herokuapp.com/cart/${itemId}`)
@@ -43,45 +42,22 @@ return (
 
     <div className='order'>
         <motion.div exit="exit" variants={pageAnimation} initial="hidden" animate="show" className='checkout-container'>
-            <div className='checkout-header'> 
-                <div className='header-block'>
-                    <span>Product</span>
-                    {cartItems.map((cartItem, index) => (
-                        <ul>
-                            <img src={cartItem.items.imageUrl} alt="art"></img>
-                        </ul>
-                    ))}
-
-                </div>
-                <div className='header-block'>
-                    <span>Name</span>
-                    {cartItems.map((cartItem, index) => (
-                        <ul>{cartItem.items.name}</ul>
-                    ))}
-
-                </div>
-                <div className='header-block'>
-                    <span>Quantity</span>
-                    {cartItems.map((cartItem, index) => (
-                        <ul>{cartItem.items.quantity}</ul>
-                    ))}
-                </div>
-                <div className='header-block'>
-                    <span>Price</span>
-                    {cartItems.map((cartItem, index) => (
-                        <ul>{cartItem.items.price}</ul>
-                    ))}
-                </div>
-                <div className='header-block'>
-                    <span>Remove?</span>
-                    {cartItems.map((cartItem, index) => (
-                        <button onClick={removeClick} id={cartItem._id}>Click to Remove</button>
-                    ))}
-                </div>
+            <p className="checkout-title">We hope to see you back here soon...</p>
+            <div className="details">
+            {cartItems.map((cartItem, index) => (
+                <ul className="each-item">
+                    <img className="order-image" src={cartItem.items.imageUrl} alt="art"></img>
+                    <ul>{cartItem.items.name}</ul>
+                    <ul>{cartItem.items.quantity}</ul>
+                    <ul>{cartItem.items.price}</ul>
+                    <FaTrashAlt className="remove-checkout" onClick={removeClick} id={cartItem._id}></FaTrashAlt>
+                </ul>
+            ))}
             </div>
-            <p>{cartTotal}</p>
-            <button onClick={checkoutClick}>Checkout</button>
+            <p className="total">Total: ${cartTotal}</p>
+            <PaymentForm />
         </motion.div>
+        
     </div>
 
   )

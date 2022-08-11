@@ -6,29 +6,49 @@
     background-color: #A48F78;
     height: 95vh;
     font-family: 'Taviraj', serif;
+
+    @media (max-width: 1000px){
+        justify-content: center;
+    }
+
+    @media (max-width: 1000px){
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        background-color:#FCF9EE;
+    }
 }
 .form-container{
     display: flex;
     justify-content: center;
     flex-direction: column;
-    max-width: 20vw;
-    max-height: 60vh;
-    margin: auto;
-	max-width: 30rem;
+    min-width: 400px;
+    max-height: 68vh;
+	max-width: 40vw;
 	padding: 50px;
 	background: #FCF9EE;
     border-radius: 16px;
+    margin-left: 3rem;
     
+    @media (max-width: 1000px){
+        border: 2px solid #A48F78;
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+        min-width: 350px;
+        height: 500px;
+        margin-left: 0;
+     }
 }
+
 
 .contact{
     color: #A48F78;
     padding-bottom: 1rem;
 }
 
+
 .name{
     min-height: 2rem;
-    width: 25vw;
     border: none;
     border-radius: 16px;  
     margin-bottom: .5rem;
@@ -59,12 +79,21 @@
     min-height: 2rem;
     padding: 10px;
     background-color: #A48F78;
-
     color: white;
 }
 
 .contact-pic{
-    width: 40rem;
+    width: 28rem;
     height: 35rem;
-    padding-left: 10rem;
+    margin-right: 3rem;
+
+    @media (max-width: 1000px){
+        margin-top: 3rem;
+        padding-top: 0;
+        padding-left: 0;
+        width: 350px;
+        height: 500px;
+        border: 2px solid #A48F78;
+        margin-right: 0;
+     }
 }

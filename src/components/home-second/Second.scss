@@ -10,4 +10,15 @@
     padding-bottom: 4.5rem;
     padding-top: 4rem;
     font-family: 'EB Garamond', serif;
+
+    @media (max-width: 1000px){
+        font-size: 28px;
+     }
+     @media (max-width: 600px){
+        font-size: 23px;
+     }
+
+    @media (max-width: 480px){
+       font-size: 18px;
+    }   
 }

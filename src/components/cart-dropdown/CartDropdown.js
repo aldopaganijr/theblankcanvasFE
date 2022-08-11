@@ -7,6 +7,9 @@ import axios from 'axios';
 import { useNavigate } from "react-router-dom"
 import {AiFillRightCircle} from "react-icons/ai";
 import {AiFillLeftCircle} from "react-icons/ai";
+import {FaTrashAlt} from "react-icons/fa"
+
+
 const CartDropdown = () => {
   const[cartItems, setCartItems] = useState([])
   const[cartTotal, setCartTotal] = useState(0)
@@ -80,7 +83,7 @@ const CartDropdown = () => {
               id={cartItem._id}/>
           </span>
           <span className='remove'>
-            <button onClick={removeClick} id={cartItem._id}>Remove</button>
+            <FaTrashAlt onClick={removeClick} id={cartItem._id}>Remove</FaTrashAlt>
           </span>
         </p>
         </>

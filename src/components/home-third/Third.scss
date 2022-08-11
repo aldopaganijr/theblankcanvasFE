@@ -4,6 +4,19 @@
     padding-top: 50px;
     padding-bottom: 50px;
     display: flex;
+
+    @media(max-width: 900px){
+        height: 25rem;
+        padding-top: 20px;
+        padding-bottom: 10px;
+    }
+
+    @media(max-width: 600px){
+        height: 15rem;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
 }
 
 .item img{
@@ -11,6 +24,16 @@
     height: 100%;
     padding: 10px;
     pointer-events: none;
+
+    @media(max-width: 900px){
+        min-width: 30%;
+        max-height: 100%;
+    }
+
+    @media(max-width: 600px){
+        min-width: 19%;
+        max-height: 100%;
+    }
 }
 
 .inner-carousel{

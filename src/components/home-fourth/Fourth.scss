@@ -2,6 +2,15 @@
     display: flex;
     justify-content: space-evenly;
     flex-direction: row;
+
+    @media (max-width: 1000px){
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 3rem;
+        margin-top: 3rem;
+    }
 }
 
 .small-image{
@@ -20,20 +29,45 @@
     border-radius: 16px;
     width: 20rem;
     font-family: 'Taviraj', serif;
+
+    @media (max-width: 1000px){
+        margin-bottom: 2rem;
+        margin-top: 2rem;
+        padding: 20px;
+    }
+
+
+    @media (max-width: 600px){
+        margin-bottom: 2rem;
+        margin-top: 2rem;
+        padding: 15px;
+    }
 }
 
 .review-bio{
     font-size: 18px;
     padding-top: .5rem;
+
+    @media (max-width: 600px){
+        font-size: 15px;
+    }
 }
 
 .customerName{
     padding-top: 1rem;
+
+    @media (max-width: 600px){
+        font-size: 20px;
+    }
 }
 
 .image-stars{
     display: flex;
     flex-direction: row;
+
+    @media (max-width: 600px){
+        font-size: 18px;
+    }
 }
 
 .stars{

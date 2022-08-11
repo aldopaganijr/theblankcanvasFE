@@ -5,6 +5,15 @@
     justify-content: space-between;
     background-color: #A48F78;
     font-family: 'Taviraj', serif;
+
+    @media (max-width: 700px){
+        display: flex;
+        flex-direction: column;
+        padding: 50px;
+        height: 30px;
+        justify-content: center;
+        align-items: center;
+       }
 }
 
 .nav-links {
@@ -16,6 +25,17 @@
     box-sizing: border-box;
     padding: 25px;
     white-space: nowrap;
+
+    @media (max-width: 700px){
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 5px;
+        padding-left: 1rem;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+       }
+   
 }
 
 .link {
@@ -35,6 +55,12 @@
     padding-left: 1rem;
     font-weight: bold;
     text-decoration: none;
+
+    @media (max-width: 700px){
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       }
 }
 
 .nav-container a:hover {

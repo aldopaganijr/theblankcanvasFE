@@ -60,3 +60,11 @@ padding: 1rem;
 .total{
 padding-left: 1rem;
 }
+
+.remove{
+  padding-left: .5rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+  display: flex;
+  justify-content: flex-end;
+}

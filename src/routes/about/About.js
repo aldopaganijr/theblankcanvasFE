@@ -14,6 +14,7 @@ const about = () => {
       <motion.div exit="exit" variants={pageAnimation} initial="hidden" animate="show" className='text-container'>
         <div className='top-heading'>
           <h2>Francisco & Anette Diopani</h2>
+          <hr></hr>
         </div>
         <div className='story'>
           <p>After retiring in 2008 from an illustrious career in finance management, the Diopani’s moved deep into the Rocky Mountains and started selling high quality, one of a kind art prints to a wide variety of international clientele.<br></br><br></br>
