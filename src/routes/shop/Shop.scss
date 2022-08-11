@@ -64,14 +64,16 @@
         
     @media (max-width: 1000px){
       font-size: 15px;
-      left: 120px;
+      left: 110px;
       top: 230px;
+      min-width: 30%;
      }
 
       @media (max-width: 480px){
         font-size: 15px;
-        left: 105px;
+        left: 100px;
         top: 230px;
+        min-width: 30%;
        }
     }
   

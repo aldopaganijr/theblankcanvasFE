@@ -13,6 +13,10 @@
 .social{
     padding: 10px;
     font-size: 1.5rem;
+
+    @media (max-width: 450px){
+      font-size: 1.3rem;
+    }
 }
 
 .footer-container a:hover {

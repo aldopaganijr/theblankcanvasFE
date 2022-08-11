@@ -53,7 +53,7 @@ return (
             ))}
             </div>
             <p className="total">Total: ${cartTotal}</p>
-            <PaymentForm />
+            <PaymentForm className="payment-form" />
         </motion.div>
         
     </div>
