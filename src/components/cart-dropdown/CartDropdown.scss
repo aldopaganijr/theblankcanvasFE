@@ -13,6 +13,21 @@
   border-bottom-left-radius: 16px;
   border-bottom-right-radius: 16px;
   border: #A48F78 2px solid;
+
+  @media (max-width:1000px){
+    top: 69px;
+    width: 50vw;
+  }
+
+  @media (max-width:700px){
+    top: 100px;
+    width: 100vw;
+    height: 89vh;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+
+
   .empty-message {
     font-size: 18px;
     margin: 50px auto;
@@ -40,13 +55,15 @@
     color: #A48F78 ;
     padding-left: 1rem;
   }
+  
   .left{
-    padding-right: .5rem;
+    padding-right: 1rem;
     font-size: 1.5rem;
     cursor: pointer;
   }
+
   .right{
-    padding-left: .5rem;
+    padding-left: 1rem;
     font-size: 1.5rem;
     cursor: pointer;
   }
