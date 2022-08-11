@@ -7,8 +7,6 @@ import {FaTrashAlt} from "react-icons/fa"
 import PaymentForm from "../../components/payment-form/PaymentForm"
 
 
-
-
 const Order = () => {
 
     const[cartItems, setCartItems] = useState([])

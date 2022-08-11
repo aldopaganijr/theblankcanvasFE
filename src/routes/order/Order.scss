@@ -4,7 +4,21 @@
      padding: 20px 40px;
      display: flex;
      flex-direction: row; 
+
+     @media (max-width: 500px){
+      padding: 10px;
+  }
+  
+  @media (max-width: 900px){
+    padding: 5px;
+  }
    }
+
+  .details{
+    @media (max-width: 500px){
+      width: 100%;
+  }
+  }
 
    .checkout-container {
      width: 70vw;
@@ -19,6 +33,10 @@
      color: #A48F78;
      border: 2px solid #A48F78 ;
 
+     @media (max-width: 500px){
+      width: 100%;
+  }
+
      .total {
        margin-top: 30px;
        margin-left: auto;
@@ -29,6 +47,11 @@
      .order-image{
       width: 200px;
       height: 125px;
+
+      @media (max-width: 500px){
+        width: 150px;
+        height: 100px;
+    }
      }
   
      .checkout-button{
