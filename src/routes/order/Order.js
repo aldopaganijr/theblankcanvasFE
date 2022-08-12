@@ -45,14 +45,14 @@ return (
             {cartItems.map((cartItem, index) => (
                 <ul className="each-item">
                     <img className="order-image" src={cartItem.items.imageUrl} alt="art"></img>
-                    <ul>{cartItem.items.name}</ul>
-                    <ul>{cartItem.items.quantity}</ul>
-                    <ul>{cartItem.items.price}</ul>
+                    <ul className="info">{cartItem.items.name}</ul>
+                    <ul className="info">{cartItem.items.quantity}</ul>
+                    <ul className="info">${cartItem.items.price}</ul>
                     <FaTrashAlt className="remove-checkout" onClick={removeClick} id={cartItem._id}></FaTrashAlt>
                 </ul>
             ))}
             </div>
-            <p className="total">Total: ${cartTotal}</p>
+            <p className="total">Total Due: ${cartTotal}</p>
             <PaymentForm className="payment-form" />
         </motion.div>
         

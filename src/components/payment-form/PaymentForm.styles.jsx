@@ -11,7 +11,7 @@ export const PaymentFormContainer = styled.div`
 
 export const FormContainer = styled.form`
     height: 100px;
-    min-width: 500px;
+    min-width: 300px;
     font-family: 'Poppins', sans-serif;
 `
 
@@ -24,4 +24,8 @@ export const PayNowButton = styled.button`
       background-color: #A48F78;
       color: white;
       font-family: 'Poppins', sans-serif;
+
+    @media (max-width: 500px){
+        
+    }
 `
