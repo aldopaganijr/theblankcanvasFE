@@ -76,7 +76,7 @@ const PaymentForm = () => {
     axios.delete('https://e-commerce-earth.herokuapp.com/cart')
     setCartTotal(0)
 
-}
+  }
 
   return (
 
@@ -89,6 +89,7 @@ const PaymentForm = () => {
     </PaymentFormContainer>
 
   )
-}
+  }
 
-export default PaymentForm
+
+export default PaymentForm;
